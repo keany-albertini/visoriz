@@ -3,7 +3,7 @@
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const hero=document.querySelector('.hero');
 const arch=document.querySelector('.hero-arch');
-const sectionTargets=document.querySelectorAll('.section-heading,.signature .container,.step,.plan,.faq-grid,.contact-grid,.hero-art');
+const sectionTargets=document.querySelectorAll('.section-heading,.signature .container,.step,.plan,.faq-grid,.contact-grid,.hero-art,.ui-craft-head,.ui-panel');
 if(!reduced.matches&&'IntersectionObserver'in window){
 const observer=new IntersectionObserver(entries=>{
 for(const entry of entries){if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}}
