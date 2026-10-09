@@ -256,3 +256,10 @@ details[open] summary{color:#997746}
  .luxe-ticker-track,.luxe-showcase-seal{animation:none!important}
  [data-luxe-depth],.visual-tile img{transform:none!important}
 }
+
+/* Keep circular artwork centered while moving vertically */
+.luxe-manifesto-lines[data-luxe-depth]{transform:translate3d(-50%,var(--luxe-depth,0px),0)}
+/* Fine-grained pointer response for the editorial photographic composition */
+.luxe-showcase-frame[data-luxe-depth]{transform:translate3d(var(--luxe-pointer-x,0px),calc(var(--luxe-depth,0px) + var(--luxe-pointer-y,0px)),0);transition:transform .22s ease-out}
+.luxe-showcase-secondary[data-luxe-depth]{transform:translate3d(calc(0px - var(--luxe-pointer-x,0px)),calc(var(--luxe-depth,0px) - var(--luxe-pointer-y,0px)),0);transition:transform .22s ease-out}
+@media(prefers-reduced-motion:reduce){.luxe-manifesto-lines[data-luxe-depth]{transform:translateX(-50%)!important}}
