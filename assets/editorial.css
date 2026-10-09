@@ -317,3 +317,9 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}img{display:bloc
  .vx-reveal{opacity:1;transform:none;transition:none}
  *,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}
 }
+
+/* Motion polish: restrained parallax, gold active indicator */
+.hero-arch[data-luxe-depth]{transform:translate3d(0,calc(var(--luxe-depth,0px) + var(--hero-shift,0px)),0)}
+.desktop-nav>a[aria-current]{color:#98713d}
+.desktop-nav>a[aria-current]:after{content:'';display:block;width:100%;height:1px;background:#b28d57;margin-top:5px}
+@media(prefers-reduced-motion:reduce){.hero-arch[data-luxe-depth]{transform:none!important}}
