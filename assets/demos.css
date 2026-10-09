@@ -101,3 +101,27 @@ button{font:inherit;cursor:pointer}
  .showcase{padding:60px 0}.footer-inner{flex-wrap:wrap;gap:12px}
 }
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+
+/* Maison Flora — composition éditoriale, événementiel */
+.floral .hero{background:#f9f3ee}
+.floral .hero h1{font-size:clamp(3.4rem,5.8vw,6rem);color:#51382f}
+.floral .hero .eyebrow{color:#ac776b}
+.floral .btn.accent{background:#b97772;border-color:#b97772}
+.floral .hero-gallery:before{background:#f0e1d8}
+.floral .hero-gallery>img{border-radius:180px 12px 12px 12px}
+.floral .hero-flag{background:#fffaf5}
+.floral .story{background:#f4ebe5}
+.floral-feature{display:grid;grid-template-columns:1.12fr .88fr;background:#f2e6df;min-height:450px}
+.floral-feature-photo{min-height:450px;overflow:hidden}
+.floral-feature-photo img{width:100%;height:100%;object-fit:cover}
+.floral-feature-text{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:70px clamp(30px,7vw,110px)}
+.floral-feature-text .eyebrow{color:#a26b64}
+.floral-feature-text h2{font:400 clamp(2.5rem,4.5vw,5rem)/1.1 'Fraunces',Georgia,serif;letter-spacing:-.055em;color:#543a32;margin:15px 0 20px}
+.floral-feature-text p{font-size:14px;max-width:440px;color:#7c6c65;line-height:1.9;margin-bottom:25px}
+.floral-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.floral-steps article{padding:26px 24px;border:1px solid #eadbd4;background:#fffaf7;border-radius:10px}
+.floral-steps article>span{font:italic 24px Georgia,serif;color:#b97772}
+.floral-steps h3{font:500 25px Georgia,serif;color:#533b33;margin:17px 0 10px}
+.floral-steps p{color:#796d66;font-size:13px;margin:0}
+@media(max-width:760px){.floral-feature{grid-template-columns:1fr}.floral-feature-photo{min-height:290px;height:290px}.floral-feature-text{padding:48px 22px}.floral-steps{grid-template-columns:1fr}.floral-steps article{padding:22px}}
