@@ -1,20 +1,31 @@
-# Visoriz
+# Visoriz — Studio web
 
-Site vitrine de pré-lancement de l'agence Visoriz — « Votre ambition, notre création. »
+Site public de démonstration de Visoriz : https://visoriz.pages.dev/
 
-## Pages
-- `index.html` : présentation de l'agence, tarifs, prise de contact en préparation.
-- `demos/fleuriste.html`, `demos/boulangerie.html`, `demos/coiffure.html`, `demos/artisan.html` : démonstrations fictives navigables.
+## Direction actuelle
 
-## Tester
-Ouvrir `index.html` dans un navigateur, ou déployer le dossier sur un hébergeur statique tel que Cloudflare Pages.
+Design lumineux, minimaliste et responsive. Identité visuelle : blanc cassé, vert profond, bleu discret et détails végétaux. Présentation de vrais modèles navigables dès l'accueil.
 
-## Avant la commercialisation
-- Renseigner l'adresse dans `const email='';` en bas de `index.html` pour activer la préparation du message via le logiciel de messagerie du visiteur. Une adresse vide bloque volontairement l'envoi.
-- Prévoir une vraie réception de formulaire (backend ou prestataire), politique de confidentialité et mentions légales.
-- Vérifier la marque Visoriz, enregistrer le domaine et définir les contrats, les frais de domaine/hébergement et les limites de prestation.
-- Vérifier les liens, l'accessibilité et les usages commerciaux de l'hébergement.
-- La formule boutique partenaire est une proposition, sans paiement intégré ni contrat actif.
+## Fichiers
 
-## Déploiement gratuit de test
-Sur Cloudflare Dashboard > Workers & Pages > Create > Pages > Connect Git, sélectionner ce dépôt et choisir la branche main. Projet statique sans commande de build, répertoire de sortie racine du dépôt.
+- `index.html` : site de l'agence et offres.
+- `assets/site.css` : styles principaux et styles mobiles.
+- `assets/main.js` : menu mobile, filtres métier, choix d'offre et préparation/copie du brief.
+- `assets/demos.css` : styles mutualisés des quatre modèles.
+- `demos/fleuriste.html` : Maison Flora.
+- `demos/boulangerie.html` : Le Fournil Doré.
+- `demos/coiffure.html` : Atelier N°7.
+- `demos/artisan.html` : Atelier Beaumont.
+
+## Publication
+
+Le dépôt GitHub est relié à Cloudflare Pages. La branche principale `main` est publiée automatiquement si la connexion GitHub/Cloudflare et le déploiement fonctionnent. Projet statique, sans commande de compilation, répertoire de sortie racine `.`.
+
+## Important avant les ventes
+
+- Le formulaire du site **ne transmet aucun message** : il prépare un texte que le visiteur peut copier. Brancher un vrai formulaire de réception et ajouter une adresse de contact avant ouverture commerciale.
+- Les quatre démonstrations sont fictives (ni clients ni témoignages réels).
+- Les photos sont chargées depuis Unsplash : contrôler licences, conditions d'utilisation et remplacer au besoin par des photos optimisées et choisies pour la production.
+- Rédiger les mentions légales, la politique de confidentialité et les conditions de service.
+- Vérifier marque/domaine et clarifier TVA, domaine, hébergement, maintenance, délais, nombre de corrections et titularité des sites.
+- Le projet Boutique Partenaire à 5 % n'est pas une offre contractuelle active.
