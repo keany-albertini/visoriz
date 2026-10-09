@@ -27,6 +27,31 @@ document.getElementById('contact')?.scrollIntoView({behavior:matchMedia('(prefer
 setTimeout(()=>document.getElementById('name')?.focus({preventScroll:true}),500);
 });
 render();
+
+// Mobile showcase: interactive, keyboard-accessible, and with working demo links.
+const heroSlides=[
+{category:'01 / FLEURISTE & ÉVÉNEMENTIEL',name:'Maison Flora',image:'https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?w=900&q=85',alt:'Composition florale, aperçu du modèle Maison Flora',url:'demos/fleuriste.html'},
+{category:'02 / BOULANGERIE ARTISANALE',name:'Le Fournil Doré',image:'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=900&q=85',alt:'Pains artisanaux, aperçu du modèle Le Fournil Doré',url:'demos/boulangerie.html'},
+{category:'03 / ARTISAN & SAVOIR-FAIRE',name:'Atelier Beaumont',image:'https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=900&q=85',alt:'Atelier de menuiserie, aperçu du modèle Atelier Beaumont',url:'demos/artisan.html'}
+];
+let heroIndex=0;
+const heroImg=document.getElementById('vx-hero-img');
+const heroLink=document.getElementById('vx-hero-link');
+function updateHero(delta){
+if(!heroImg||!heroLink)return;
+heroIndex=(heroIndex+delta+heroSlides.length)%heroSlides.length;
+const slide=heroSlides[heroIndex];
+heroImg.classList.add('vx-swapping');
+heroImg.src=slide.image;heroImg.alt=slide.alt;
+heroImg.onload=()=>heroImg.classList.remove('vx-swapping');
+heroImg.onerror=()=>heroImg.classList.remove('vx-swapping');
+heroLink.href=slide.url;heroLink.setAttribute('aria-label','Explorer le modèle '+slide.name);
+setText('vx-hero-category',slide.category);setText('vx-hero-name',slide.name);
+setText('vx-hero-counter',String(heroIndex+1).padStart(2,'0')+' / 03');
+}
+document.getElementById('vx-hero-prev')?.addEventListener('click',()=>updateHero(-1));
+document.getElementById('vx-hero-next')?.addEventListener('click',()=>updateHero(1));
+
 const progress=document.createElement('div');progress.className='vx-progress';progress.setAttribute('aria-hidden','true');document.body.append(progress);
 const header=document.querySelector('.header');
 let queued=false;
