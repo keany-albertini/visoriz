@@ -25,11 +25,11 @@
   form?.addEventListener('submit',e=>{
     e.preventDefault();
     const data=new FormData(form);
-    currentMessage='Bonjour Visoriz,\\n\\n'+
-      'Nom : '+data.get('name')+'\\n'+
-      'Email : '+data.get('email')+'\\n'+
-      'Formule : '+data.get('offer')+'\\n\\n'+
-      'Mon projet :\\n'+data.get('message');
+    currentMessage='Bonjour Visoriz,\n\n'+
+      'Nom : '+data.get('name')+'\n'+
+      'Email : '+data.get('email')+'\n'+
+      'Formule : '+data.get('offer')+'\n\n'+
+      'Mon projet :\n'+data.get('message');
     feedback.textContent="Votre demande est prête. Elle n'a pas été envoyée : copiez-la pour la conserver ou la transmettre lorsque notre contact sera activé.";
     copy.classList.add('visible');
   });
