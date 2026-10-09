@@ -169,3 +169,30 @@ body{background:#fffefa}
  .hero-scroll span{animation:none}
  .ui-device-desktop,.ui-phone,.ui-detail-orb{transition:none}
 }
+
+/* VISORIZ — WHITE CANVAS / fond blanc pur sur toutes les sections */
+:root,html,body{--paper:#ffffff!important;--cream:#ffffff!important;--ui-cream:#ffffff!important;background:#ffffff!important;color-scheme:only light!important}
+.header,.hero,.work,.ui-craft,.signature,.vx-studio,.pricing,.process,.faq-section,.contact,.footer,.marquee{background:#ffffff!important;background-image:none!important;color:#191713!important}
+.hero:before,.hero:after,.signature:before,.signature:after,.ui-craft:before,.contact:before{border-color:#d5bb8e55}
+.header{background:#ffffffed!important}
+.mobile-nav{background:#ffffff!important}
+.marquee{border-color:#e7dac6}
+.ui-panel,.ui-panel--main,.ui-panel--phone,.ui-panel--detail,.vx-panel,.vx-preview-wrap,.plan,.form,.partner-mini,.vx-estimate{background:#ffffff!important;background-image:none!important;color:#191713!important}
+.ui-panel--main:before{background:none!important}
+.ui-panel--detail{border-color:#e8dfd2!important}
+.ui-panel--detail:before{color:#c9aa7630!important}
+.ui-panel--detail .ui-panel-eyebrow{color:#98713e!important}
+.ui-panel--detail p{color:#655d51!important}
+.ui-panel--detail .ui-panel-link{color:#8b662f!important}
+.ui-detail-orb{color:#a67f45!important}
+.ui-panel--main:after{border-color:#c6a46d55}
+.signature h2,.section-heading h2,.ui-craft-head h2,.vx-studio-head h2,.contact h2,.faq-grid h2{color:#191713}
+.hero .eyebrow,.ui-panel-eyebrow,.eyebrow{color:#98713e}
+.hero h1,.hero h1:not(em){color:#191713!important}
+.hero h1 em{color:#aa824c!important}
+.hero-lead,.signature p,.ui-panel p,.section-heading p{color:#625d55}
+.project-image,.hero-arch,.art-preview-scene,.vx-site,.ui-device-screen{background-color:#f7f3ed}
+.project-tag,.project-arrow,.art-preview,.art-browser,.vx-browser-bar{background:#ffffff!important}
+.filter:not(.active),.vx-choice:not([aria-pressed=true]){background:#ffffff!important}
+.form input,.form textarea,.form select{background:#ffffff!important}
+@media(max-width:900px){.mobile-nav{background:#ffffff!important}}
