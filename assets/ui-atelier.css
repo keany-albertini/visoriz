@@ -196,3 +196,28 @@ body{background:#fffefa}
 .filter:not(.active),.vx-choice:not([aria-pressed=true]){background:#ffffff!important}
 .form input,.form textarea,.form select{background:#ffffff!important}
 @media(max-width:900px){.mobile-nav{background:#ffffff!important}}
+
+/* Mobile browser dark-mode safeguard: a true white image surface, not an auto-darkened color. */
+:root,html,body{color-scheme:only light!important}
+html,body,.header,.hero,.work,.ui-craft,.signature,.vx-studio,.pricing,.process,.faq-section,.contact,.footer,.marquee,.mobile-nav{
+ background-color:#fff!important;
+ background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%222%22%20height%3D%222%22%3E%3Crect%20width%3D%222%22%20height%3D%222%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fsvg%3E")!important;
+ background-repeat:repeat!important;
+}
+.hero h1,.header .brand,.header .brand .brand-sub,.hero .hero-lead,.hero .hero-line,.hero .eyebrow,.hero .text-link,.hero .hero-facts span{
+ color:#1a1815!important;
+ -webkit-text-fill-color:#1a1815!important;
+}
+.hero h1 em{
+ background:none!important;
+ color:#a7824d!important;
+ -webkit-text-fill-color:#a7824d!important;
+}
+.hero .eyebrow,.hero .hero-line span{color:#947044!important;-webkit-text-fill-color:#947044!important}
+.hero .hero-lead{color:#5b564e!important;-webkit-text-fill-color:#5b564e!important}
+.header .brand .brand-dot{color:#aa824c!important;-webkit-text-fill-color:#aa824c!important}
+.header .brand .brand-sub{color:#977b52!important;-webkit-text-fill-color:#977b52!important}
+.header .burger{background:#fff!important;color:#211c15!important;-webkit-text-fill-color:#211c15!important;border-color:#d9c9ae!important}
+.hero .hero-actions .btn{background:#191715!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border-color:#191715!important}
+.hero .hero-actions .text-link{color:#1a1815!important;-webkit-text-fill-color:#1a1815!important}
+.hero .hero-scroll{color:#8b795e!important;-webkit-text-fill-color:#8b795e!important}
