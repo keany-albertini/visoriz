@@ -14,7 +14,7 @@ const links=[...document.querySelectorAll('.desktop-nav a')];
 if('IntersectionObserver'in window){
 const sections=[...document.querySelectorAll('section[id]')];
 const navObserver=new IntersectionObserver(entries=>{
-entries.forEach(entry=>{if(!entry.isIntersecting)return;links.forEach(link=>{const current=link.getAttribute('href')==='#'+entry.target.id;link.toggleAttribute('aria-current',current)})});
+entries.forEach(entry=>{if(!entry.isIntersecting)return;links.forEach(link=>{const current=link.getAttribute('href')==='#'+entry.target.id;current?link.setAttribute('aria-current','location'):link.removeAttribute('aria-current')})});
 },{rootMargin:'-25% 0px -65% 0px'});
 sections.forEach(section=>navObserver.observe(section));
 }
