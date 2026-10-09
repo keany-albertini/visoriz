@@ -29,3 +29,7 @@ Le dépôt GitHub est relié à Cloudflare Pages. La branche principale `main` e
 - Rédiger les mentions légales, la politique de confidentialité et les conditions de service.
 - Vérifier marque/domaine et clarifier TVA, domaine, hébergement, maintenance, délais, nombre de corrections et titularité des sites.
 - Le projet Boutique Partenaire à 5 % n'est pas une offre contractuelle active.
+
+## Photos libres pour la création des sites
+
+Utiliser en priorité les photos gratuites **Pexels**, **Unsplash** et **Pixabay**, dans le respect de leurs licences. Les modèles actuels illustrent les métiers avec des photos Unsplash ; pour chaque livraison client, retenir des visuels cohérents, vérifier leur licence et optimiser leur poids. Voir [le guide des images](GUIDE-IMAGES.md) et conserver la traçabilité des sources.
