@@ -221,3 +221,14 @@ html,body,.header,.hero,.work,.ui-craft,.signature,.vx-studio,.pricing,.process,
 .hero .hero-actions .btn{background:#191715!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border-color:#191715!important}
 .hero .hero-actions .text-link{color:#1a1815!important;-webkit-text-fill-color:#1a1815!important}
 .hero .hero-scroll{color:#8b795e!important;-webkit-text-fill-color:#8b795e!important}
+
+
+/* Liens vers les modèles de démonstration — sans modifier l'identité visuelle */
+.project-visit{display:inline-flex;align-items:center;gap:12px;margin:5px 2px 0;min-height:44px;color:#947143;border-bottom:1px solid #c5a778;font-size:11px;font-weight:700;letter-spacing:.03em;transition:color .3s,border-color .3s}
+.project-visit span{display:inline-block;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.project:hover .project-visit,.project:focus-visible .project-visit{color:#191715;border-color:#191715}
+.project:hover .project-visit span,.project:focus-visible .project-visit span{transform:translate(3px,-3px)}
+.project:focus-visible{outline:2px solid #b08b53;outline-offset:5px}
+.plan-demo{display:flex;align-items:center;justify-content:center;min-height:44px;margin-top:8px;font-size:11px;font-weight:700;letter-spacing:.015em;color:#8e6835;border-bottom:1px solid transparent;transition:color .25s,background .25s}
+.plan-demo:hover,.plan-demo:focus-visible{background:#f6efe3;color:#171511;text-decoration:underline;text-underline-offset:4px}
+@media(prefers-reduced-motion:reduce){.project-visit,.project-visit span,.plan-demo{transition:none}}
