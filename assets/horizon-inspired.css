@@ -1,0 +1,39 @@
+/* VISORIZ / Direction immersive inspirée des codes des studios créatifs, sans reproduire de template tiers */
+:root{--hx-ink:#071522;--hx-panel:#101f2f;--hx-edge:rgba(160,216,244,.19);--hx-luminous:#88e8f0}
+body{background:#071522!important}
+.header{background:rgba(7,16,27,.78)!important;box-shadow:0 1px 0 rgba(255,255,255,.09)!important}
+.hero{min-height:min(860px,98svh);background:radial-gradient(circle at 77% 46%,#264865 0%,#10283e 30%,#071522 66%)!important;overflow:hidden}
+.hero:after{content:"";position:absolute;z-index:-1;pointer-events:none;right:-18vw;top:-15vw;width:73vw;height:73vw;border:1px solid rgba(141,222,238,.15);border-radius:50%;box-shadow:0 0 0 8vw rgba(128,220,240,.025),0 0 0 16vw rgba(128,220,240,.025),0 0 0 24vw rgba(128,220,240,.018)}
+.hero .hero-grid{position:relative}
+.hero .eyebrow{letter-spacing:.2em!important;font-size:10px!important}
+.hero h1{font-size:clamp(4.3rem,8.2vw,9.4rem)!important;letter-spacing:-.07em!important;line-height:.93!important;max-width:12ch;text-wrap:balance}
+.hero h1 em{font-weight:400;color:#8de6ee!important;-webkit-text-fill-color:#8de6ee!important}
+.hero .hero-lead{font-size:clamp(1rem,1.45vw,1.3rem);line-height:1.65;max-width:490px!important}
+.hero-art{filter:drop-shadow(0 34px 60px rgba(0,0,0,.5))}
+.hero-arch{border-radius:25px!important;overflow:hidden;transform:rotate(2deg)}
+.hero-arch img{filter:saturate(.72) contrast(1.08)}
+.hero-actions .btn{border-radius:999px!important;padding:16px 27px!important}
+.hero .hero-facts{border-top:1px solid rgba(190,227,242,.18);padding-top:20px}
+.hx-bridge{background:#071522;color:#f6fbff;padding:clamp(54px,8vw,120px) 0;position:relative}
+.hx-bridge:before{content:"";height:1px;position:absolute;left:5%;right:5%;top:0;background:linear-gradient(90deg,transparent,#5b8698,transparent)}
+.hx-label{color:#8de6ee;font-size:11px;font-weight:750;letter-spacing:.18em;text-transform:uppercase}
+.hx-heading{font-size:clamp(2.7rem,6.7vw,7rem);line-height:1.02;letter-spacing:-.06em;font-weight:500;max-width:1000px;margin:23px 0 44px}
+.hx-heading em{font-style:normal;color:#9edbe6}
+.hx-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:16px}
+.hx-tile{position:relative;min-height:275px;padding:30px;border-radius:22px;border:1px solid var(--hx-edge);background:linear-gradient(140deg,#1b364e,#0c1828);color:#f6fbff;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;text-decoration:none;transition:transform .35s ease,border-color .35s ease}
+.hx-tile:nth-child(2){background:linear-gradient(160deg,#1b3448,#112536 65%,#0a1725)}
+.hx-tile:nth-child(3){background:linear-gradient(145deg,#203f50,#0c1c2d 65%)}
+.hx-tile:before{content:"";width:240px;height:240px;position:absolute;right:-100px;top:-100px;background:radial-gradient(circle,rgba(121,224,232,.3),transparent 68%);pointer-events:none}
+.hx-tile:hover{transform:translateY(-6px);border-color:rgba(160,235,245,.55)}
+.hx-tile-number{font-size:11px;letter-spacing:.12em;color:#9be0e7}
+.hx-tile strong{font-size:clamp(1.5rem,2.65vw,2.65rem);letter-spacing:-.04em;line-height:1.05;font-weight:500;display:block;max-width:12ch}
+.hx-tile small{display:block;font-size:13px;color:#c3d6e3;margin-top:12px;line-height:1.5}
+.hx-tile-arrow{position:absolute;right:25px;bottom:27px;font-size:25px;color:#9debf2}
+.work .section-heading h2,.vx-studio-head h2,.ui-craft-head h2{letter-spacing:-.045em}
+.project{border-radius:18px;overflow:hidden}
+.project-image{border-radius:18px!important}
+.project-image img{filter:saturate(.87);transition:transform .9s cubic-bezier(.18,.78,.18,1),filter .6s}
+.project:hover .project-image img{filter:saturate(1.12);transform:scale(1.06)}
+@media(max-width:1000px){.hx-grid{grid-template-columns:1fr 1fr}.hx-tile:first-child{grid-column:span 2}.hero h1{font-size:clamp(3.7rem,9vw,7rem)!important}}
+@media(max-width:700px){.hero{min-height:auto;padding-bottom:55px}.hero h1{font-size:clamp(3.25rem,13vw,5rem)!important;letter-spacing:-.065em!important}.hero-art{filter:none}.hx-bridge{padding:65px 0}.hx-heading{font-size:clamp(2.6rem,10vw,4rem)}.hx-grid{grid-template-columns:1fr}.hx-tile,.hx-tile:first-child{grid-column:auto;min-height:220px;padding:24px}.hx-tile strong{font-size:2rem}.hx-tile:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){.hx-tile,.project-image img{transition:none!important}.hx-tile:hover{transform:none}}
