@@ -1,0 +1,55 @@
+/* VISORIZ — Minuit & Glacier | progressive visual upgrade, preview branch */
+:root{--vx-night:#071a2f;--vx-ink:#172333;--vx-ice:#f8fafc;--vx-blue:#1677ff;--vx-cyan:#85d8ee}
+html{scroll-padding-top:84px}
+body{overflow-x:clip}
+.header{background:rgba(7,26,47,.97)!important;background-image:none!important;box-shadow:0 1px 0 rgba(133,216,238,.12);backdrop-filter:blur(22px)}
+.header .brand,.header .brand .brand-sub{color:#f8fafc!important;-webkit-text-fill-color:#f8fafc!important}
+.header .brand .brand-dot{color:var(--vx-cyan)!important;-webkit-text-fill-color:var(--vx-cyan)!important}
+.desktop-nav a{color:#d6e5f6!important}
+.desktop-nav a:hover,.desktop-nav>a[aria-current]{color:#85d8ee!important}
+.header .btn.small{background:#f8fafc!important;color:#071a2f!important;border-color:#f8fafc!important}
+.hero{background:radial-gradient(ellipse at 74% 36%,#183b5e 0%,#0a223b 47%,#071a2f 100%)!important;background-image:radial-gradient(ellipse at 74% 36%,#183b5e 0%,#0a223b 47%,#071a2f 100%)!important;color:#f8fafc!important;position:relative;isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.24;background:linear-gradient(120deg,transparent 35%,rgba(133,216,238,.13) 55%,transparent 78%)}
+.hero .hero-copy{position:relative;z-index:2}
+.hero h1,.hero h1:not(em){color:#f8fafc!important;-webkit-text-fill-color:#f8fafc!important}
+.hero h1 em{color:#85d8ee!important;-webkit-text-fill-color:#85d8ee!important;background:none!important}
+.hero .eyebrow,.hero .hero-line span{color:#85d8ee!important;-webkit-text-fill-color:#85d8ee!important}
+.hero .hero-lead{color:#d5e4f2!important;-webkit-text-fill-color:#d5e4f2!important}
+.hero .hero-facts span,.hero .text-link,.hero .hero-scroll{color:#e4f1fb!important;-webkit-text-fill-color:#e4f1fb!important}
+.hero .hero-actions .btn{background:#f8fafc!important;color:#071a2f!important;-webkit-text-fill-color:#071a2f!important;border-color:#f8fafc!important}
+.hero .hero-actions .btn:hover{background:#85d8ee!important;border-color:#85d8ee!important}
+.hero-art{position:relative}
+.hero-arch{box-shadow:0 28px 80px rgba(0,0,0,.34)}
+.art-stamp{border-color:rgba(133,216,238,.35)!important}
+.marquee{background:#dcebf5!important;background-image:none!important;color:#163653!important}
+.ui-craft,.work,.vx-studio,.process,.contact{background:#f8fafc!important;background-image:none!important;color:#172333!important}
+.signature,.pricing,.faq-section{background:#eaf1f8!important;background-image:none!important;color:#172333!important}
+.ui-panel,.vx-panel,.vx-preview-wrap,.plan,.form,.vx-estimate{box-shadow:0 18px 48px rgba(7,26,47,.06);border-color:#d9e4ef!important;border-radius:18px}
+.project-image{overflow:hidden;border-radius:14px}
+.project-image img{transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.project:hover .project-image img{transform:scale(1.045)}
+.filter.active,.vx-choice[aria-pressed="true"]{border-color:#1677ff!important}
+.btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #1677ff!important;outline-offset:3px}
+.footer{background:#071a2f!important;background-image:none!important;color:#f8fafc!important}
+.footer .brand,.footer a{color:#f8fafc!important}
+.footer .brand-dot{color:#85d8ee!important}
+@media(max-width:900px){
+ .header .burger{color:#f8fafc!important;-webkit-text-fill-color:#f8fafc!important;background:#153451!important;border-color:#42617d!important;min-width:44px;min-height:44px}
+ .mobile-nav{background:#071a2f!important;background-image:none!important;color:#f8fafc!important;box-shadow:0 30px 50px rgba(0,0,0,.25)}
+ .mobile-nav a{color:#f8fafc!important}
+ .mobile-nav .btn{background:#f8fafc!important;color:#071a2f!important}
+}
+@media(max-width:700px){
+ .container{width:min(100% - 36px,1200px)!important}
+ .hero-grid{gap:24px}
+ .hero h1{font-size:clamp(2.9rem,12vw,5.1rem);overflow-wrap:normal}
+ .hero-lead{max-width:35ch}
+ .hero-art{margin-top:8px}
+ .hero-actions{flex-wrap:wrap;align-items:flex-start}
+ .hero-actions .btn,.hero-actions .text-link{min-height:44px}
+ .projects{gap:24px}
+ .plan,.form{padding:24px 20px}
+ .form input,.form textarea,.form select{font-size:16px}
+ .footer-inner{padding-block:25px}
+}
+@media(prefers-reduced-motion:reduce){.project-image img{transition:none!important}.project:hover .project-image img{transform:none}}
